@@ -1,0 +1,21 @@
+<?php
+
+/*
+ * Implements hook_migrate_api().
+ */
+function csnedu_migrate_migrate_api() {
+  return array(
+    'api' => 2,
+    'groups' => array(
+      'csn' => array(
+        'title' => t('CSN Migrations'),
+      ),
+    ),
+    'migrations' => array(
+      'CSNContent' => array(
+        'class_name' => 'CSNContent',
+        'group_name' => 'csn',
+      ),
+    ),
+  );;
+}

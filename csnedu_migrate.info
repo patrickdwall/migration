@@ -1,0 +1,8 @@
+name = "CSN Migration"
+description = "CSN CSV content Migration."
+package = "csnedu"
+core = 7.x
+
+dependencies[] = migrate
+
+files[] = csnedu_migrate.content.inc
